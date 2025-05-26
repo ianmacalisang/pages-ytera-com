@@ -18,7 +18,7 @@ export default function BookingForm() {
       // Create and configure the iframe
       const iframe = document.createElement("iframe");
       iframe.src = formUrl;
-      iframe.style.width = "500px";
+      iframe.style.width = "100%";
       iframe.style.height = "620px";
       iframe.style.border = "none";
 

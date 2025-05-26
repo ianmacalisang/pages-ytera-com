@@ -40,6 +40,10 @@ body {
   opacity: 0.9;
 }
 
+.landing-bg::after {
+  @apply hidden lg:block;
+}
+
 .landing-bg > * {
   position: relative;
   z-index: 1;
