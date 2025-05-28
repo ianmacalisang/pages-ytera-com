@@ -2,7 +2,7 @@ import Link from "next/link";
 import {
   FaYoutube,
   FaFacebookF,
-  FaXTwitter,
+  FaTwitter,
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
@@ -20,7 +20,7 @@ export default function SocialButtons({ className = "" }: SocialButtonsProps) {
       color: "bg-blue-600 hover:bg-blue-700",
     },
     {
-      icon: <FaXTwitter className="w-5 h-5" />,
+      icon: <FaTwitter className="w-5 h-5" />,
       href: "https://x.com/MrAndrewMurdoch",
       label: "X",
       color: "bg-sky-500 hover:bg-sky-600",
