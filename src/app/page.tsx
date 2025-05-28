@@ -18,13 +18,13 @@ export default function Home() {
             <div className="order-2 lg:order-1 justify-end">
               <BookingForm />
             </div>
-            <div className="p-3 order-1 lg:order-2 text-center md:text-center lg:text-left">
+            <div className="p-3 flex items-end order-1 lg:order-2 text-center md:text-center lg:text-left">
               <Image
                 src="/images/book-mockup.png"
                 alt="e-book cover"
-                width={380}
-                height={380}
-                className="aspect-square object-cover mx-auto md:mx-auto lg:mx-0 my-4"
+                width={420}
+                height={420}
+                className="aspect-square object-cover md:mx-auto lg:mx-0 lg:mb-18"
               />
             </div>
           </div>
@@ -38,7 +38,7 @@ export default function Home() {
               alt="YTEra logo"
               width={300}
               height={300}
-              className="mb-4"
+              className="mb-6"
             />
             <h2 className="text-lg md:text-3xl text-red-600 mb-2 text-center">
               Meet Andrew Murdoc:
