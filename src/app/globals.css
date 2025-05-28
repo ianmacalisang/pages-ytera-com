@@ -41,7 +41,7 @@ body {
 }
 
 .landing-bg::after {
-  @apply hidden lg:block;
+  @apply hidden xl:block;
 }
 
 .landing-bg > * {

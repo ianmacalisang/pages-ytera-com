@@ -6,25 +6,27 @@ export default function Home() {
   return (
     <main>
       <section className="min-h-screen flex flex-col items-center justify-center landing-bg">
-        <div className="mx-auto max-w-5xl w-full">
-          <h2 className="text-2xl text-center md:text-4xl text-white font-bold my-6">
-            Mastering YouTube Marketing for Financial Services - FREE BOOK!
+        <div className="mx-auto max-w-5xl w-full p-4">
+          <h2 className="text-2xl text-center xl:text-4xl text-white font-bold my-6">
+            Mastering YouTube Marketing
+            <br />
+            for Financial Services - FREE BOOK!
           </h2>
-          <p className="text-lg text-center md:text-xl text-white/80 mb-6">
+          <p className="text-sm text-center xl:text-xl text-white/80 mb-6">
             Strategic Video Content For Your Authority, Credibility, Reach &
             Influence
           </p>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
-            <div className="order-2 lg:order-1 justify-end">
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-2">
+            <div className="order-2 xl:order-1">
               <BookingForm />
             </div>
-            <div className="p-3 flex items-end order-1 lg:order-2 text-center md:text-center lg:text-left">
+            <div className="order-1 xl:order-2 flex items-center justify-center xl:justify-start">
               <Image
                 src="/images/book-mockup.png"
                 alt="e-book cover"
                 width={420}
                 height={420}
-                className="aspect-square object-cover md:mx-auto lg:mx-0 lg:mb-18"
+                className="aspect-square object-cover"
               />
             </div>
           </div>
