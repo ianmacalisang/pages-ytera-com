@@ -2,7 +2,7 @@ import Link from "next/link";
 import {
   FaYoutube,
   FaFacebookF,
-  FaTwitter,
+  FaXTwitter,
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
@@ -12,34 +12,22 @@ interface SocialButtonsProps {
 }
 
 export default function SocialButtons({ className = "" }: SocialButtonsProps) {
-  const socialLinks = [
-    {
-      icon: <FaYoutube className="w-5 h-5" />,
-      href: "https://youtube.com",
-      label: "YouTube",
-      color: "bg-red-600 hover:bg-red-700",
-    },
+  const socialLinks = [   
     {
       icon: <FaFacebookF className="w-5 h-5" />,
-      href: "https://facebook.com",
+      href: "https://www.facebook.com/MrAndrewMurdoch",
       label: "Facebook",
       color: "bg-blue-600 hover:bg-blue-700",
     },
     {
-      icon: <FaTwitter className="w-5 h-5" />,
-      href: "https://twitter.com",
-      label: "Twitter",
+      icon: <FaXTwitter className="w-5 h-5" />,
+      href: "https://x.com/MrAndrewMurdoch",
+      label: "X",
       color: "bg-sky-500 hover:bg-sky-600",
-    },
-    {
-      icon: <FaInstagram className="w-5 h-5" />,
-      href: "https://instagram.com",
-      label: "Instagram",
-      color: "bg-pink-600 hover:bg-pink-700",
-    },
+    },   
     {
       icon: <FaLinkedinIn className="w-5 h-5" />,
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/mrandrewmurdoch/",
       label: "LinkedIn",
       color: "bg-blue-700 hover:bg-blue-800",
     },
