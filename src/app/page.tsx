@@ -7,12 +7,12 @@ export default function Home() {
     <main>
       <section className="min-h-screen flex flex-col items-center justify-center landing-bg">
         <div className="mx-auto max-w-5xl w-full p-4">
-          <h2 className="text-2xl text-center xl:text-4xl text-white font-bold my-6">
+          <h2 className="text-3xl text-center xl:text-4xl text-white font-bold my-6">
             Mastering YouTube Marketing
             <br />
             for Financial Services - FREE BOOK!
           </h2>
-          <p className="text-sm text-center xl:text-xl text-white/80 mb-6">
+          <p className="text-lg text-center xl:text-xl text-white/80 mb-6">
             Strategic Video Content For Your Authority, Credibility, Reach &
             Influence
           </p>
