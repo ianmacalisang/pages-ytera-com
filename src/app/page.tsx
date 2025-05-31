@@ -54,13 +54,13 @@ export default function Home() {
         <div className="flex gap-2 justify-between items-center max-w-md mx-auto px-4 my-6">
           <Link
             className="text-white/80 hover:text-white underline underline-offset-2 text-base md:text-2xl"
-            href="https://tunny-round-4flj.squarespace.com/privacy-policy"
+            href="https://ytera.com/privacy-policy"
           >
             Privacy Policy
           </Link>
           <Link
             className="text-white/80 hover:text-white underline underline-offset-2 text-base md:text-2xl"
-            href="https://tunny-round-4flj.squarespace.com/terms-of-service"
+            href="https://ytera.com/terms-of-service"
           >
             Terms of Service
           </Link>
