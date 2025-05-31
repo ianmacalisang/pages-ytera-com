@@ -21,7 +21,7 @@ export default function Home() {
             <div className="order-2 xl:order-1">
               <BookingForm />
             </div>
-            <div className="order-1 xl:order-2 flex items-center justify-center xl:justify-start xl:w-[340px]">
+            <div className="order-1 xl:order-2 flex items-center justify-center xl:justify-start xl:w-[310px]">
               <Image
                 src="/images/book-mockup.png"
                 alt="e-book cover"
