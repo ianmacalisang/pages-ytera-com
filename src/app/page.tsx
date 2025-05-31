@@ -17,23 +17,23 @@ export default function Home() {
             Strategic Video Content For Your Authority, Credibility, Reach &
             Influence
           </p>
-          <div className="grid grid-cols-1 xl:grid-cols-2 gap-2">
-            <div className="order-2 xl:order-1">
+          <div className="grid grid-cols-1 xl:grid-cols-5 gap-2">
+            <div className="order-2 xl:order-1 col-span-2">
               <BookingForm />
             </div>
-            <div className="order-1 xl:order-2 flex items-center justify-center xl:justify-start xl:w-[310px]">
+            <div className="order-1 xl:order-2 flex items-center justify-center xl:justify-start xl:w-[450px]">
               <Image
                 src="/images/book-mockup.png"
                 alt="e-book cover"
-                width={420}
-                height={420}
+                width={450}
+                height={450}
                 className="aspect-square object-cover"
               />
             </div>
           </div>
         </div>
       </section>
-      <section className="w-full bg-black py-10">
+      <footer className="w-full bg-black py-10">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col items-center justify-center mb-8">
             <Image
@@ -65,7 +65,7 @@ export default function Home() {
             Terms of Service
           </Link>
         </div>
-      </section>
+      </footer>
     </main>
   );
 }

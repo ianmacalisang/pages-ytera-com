@@ -14,12 +14,14 @@ export default function BookingForm() {
 
       const iframe = document.createElement("iframe");
       iframe.src = formUrl;
-      iframe.style.width = "100%";
-      iframe.style.height = "620px";
+      iframe.style.width = "380px";
+      iframe.style.height = "450px";
       iframe.style.border = "none";
+      iframe.className =
+        "p-2 bg-black/30 rounded-2xl backdrop-blur-xl shadow-2xl overflow-hidden";
       containerRef.current.appendChild(iframe);
     }
   }, []);
 
-  return <div ref={containerRef} className="p-4"></div>;
+  return <div ref={containerRef} className="w-[400px] mx-auto"></div>;
 }
