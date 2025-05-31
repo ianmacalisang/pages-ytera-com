@@ -1,6 +1,7 @@
 import BookingForm from "@/components/booking-form";
 import SocialButtons from "@/components/social-buttons";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -42,16 +43,27 @@ export default function Home() {
               height={300}
               className="mb-6"
             />
-            <h2 className="text-lg md:text-3xl text-red-600 mb-2 text-center">
+            <h2 className="font-bold text-lg md:text-3xl text-red-600 mb-2 text-center">
               Meet Andrew Murdoc:
             </h2>
-            <p className="text-white text-center max-w-2xl mx-auto mb-6 text-lg">
-              YouTube marketing specialist helping financial advisors and
-              professionals build their authority and reach through strategic
-              video content.
-            </p>
-            <SocialButtons className="mb-4" />
+
+            <SocialButtons className="mt-6 mb-5" />
           </div>
+          <hr className="border-white/80" />
+        </div>
+        <div className="flex gap-2 justify-between items-center max-w-md mx-auto px-4 my-6">
+          <Link
+            className="text-white/80 hover:text-white underline underline-offset-2 text-2xl"
+            href="https://tunny-round-4flj.squarespace.com/privacy-policy"
+          >
+            Privacy Policy
+          </Link>
+          <Link
+            className="text-white/80 hover:text-white underline underline-offset-2 text-2xl"
+            href="https://tunny-round-4flj.squarespace.com/terms-of-service"
+          >
+            Terms of Service
+          </Link>
         </div>
       </section>
     </main>

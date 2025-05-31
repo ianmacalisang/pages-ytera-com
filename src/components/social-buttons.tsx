@@ -1,48 +1,52 @@
+"use client";
+
 import Link from "next/link";
-import {
-  FaYoutube,
-  FaFacebookF,
-  FaTwitter,
-  FaInstagram,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLink } from "react-icons/fa6";
 
 interface SocialButtonsProps {
   className?: string;
 }
 
 export default function SocialButtons({ className = "" }: SocialButtonsProps) {
-  const socialLinks = [   
+  const socialLinks = [
     {
-      icon: <FaFacebookF className="w-5 h-5" />,
-      href: "https://www.facebook.com/MrAndrewMurdoch",
-      label: "Facebook",
-      color: "bg-blue-600 hover:bg-blue-700",
-    },
-    {
-      icon: <FaTwitter className="w-5 h-5" />,
+      icon: <FaXTwitter className="w-6 h-6" />,
       href: "https://x.com/MrAndrewMurdoch",
       label: "X",
-      color: "bg-sky-500 hover:bg-sky-600",
-    },   
+    },
     {
-      icon: <FaLinkedinIn className="w-5 h-5" />,
+      icon: <FaFacebookF className="w-6 h-6" />,
+      href: "https://www.facebook.com/MrAndrewMurdoch",
+      label: "Facebook",
+    },
+    {
+      icon: <FaLinkedinIn className="w-6 h-6" />,
       href: "https://www.linkedin.com/in/mrandrewmurdoch/",
       label: "LinkedIn",
-      color: "bg-blue-700 hover:bg-blue-800",
+    },
+    {
+      icon: <FaLink className="w-6 h-6" />,
+      href: "https://www.andrewmurdoch.com/",
+      label: "Copy Link",
+      onClick: (e: React.MouseEvent) => {
+        e.preventDefault();
+        navigator.clipboard.writeText(window.location.href);
+      },
     },
   ];
 
   return (
-    <div className={`flex gap-3 ${className}`}>
+    <div className={`flex gap-2 ${className}`}>
       {socialLinks.map((link) => (
         <Link
           key={link.label}
           href={link.href}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={link.label}
-          className={`${link.color} text-white p-2 rounded-full transition-transform hover:scale-110 flex items-center justify-center`}
+          onClick={link.onClick}
+          className="border-2 border-white text-white w-12 h-12 flex items-center justify-center transition-transform hover:scale-105 hover:opacity-80 rounded-lg"
         >
           {link.icon}
         </Link>
