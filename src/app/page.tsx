@@ -44,7 +44,7 @@ export default function Home() {
               className="mb-6"
             />
             <h2 className="font-bold text-lg md:text-3xl text-red-600 mb-2 text-center">
-              Meet Andrew Murdoc:
+              Meet Andrew Murdoch:
             </h2>
 
             <SocialButtons className="mt-6 mb-5" />
